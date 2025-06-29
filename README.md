@@ -1,1 +1,1 @@
-# jcstudio.github.io
+# jcstudio
