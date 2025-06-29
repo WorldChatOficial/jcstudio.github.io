@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JCStudio - Login</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #1e1e2f, #2c3e50);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-container {
+      background: #ffffff10;
+      backdrop-filter: blur(12px);
+      border: 1px solid #ffffff20;
+      padding: 40px 30px;
+      width: 100%;
+      max-width: 380px;
+      border-radius: 20px;
+      box-shadow: 0 0 30px #00000040;
+      color: white;
+    }
+
+    .login-container h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-weight: 600;
+    }
+
+    .login-container input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+      background: #ffffff20;
+      color: white;
+      outline: none;
+    }
+
+    .login-container input::placeholder {
+      color: #ddd;
+    }
+
+    .login-container button {
+      width: 100%;
+      padding: 12px;
+      background: #4b8cfb;
+      border: none;
+      color: white;
+      font-weight: bold;
+      border-radius: 8px;
+      margin-top: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .login-container button:hover {
+      background: #3b75d1;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 0.85em;
+      color: #aaa;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>JCStudio Login</h2>
+    <form onsubmit="login(event)">
+      <input type="text" placeholder="Usuario" required />
+      <input type="password" placeholder="Contraseña" required />
+      <button type="submit">Iniciar sesión</button>
+    </form>
+    <div class="footer">© 2025 JCStudio</div>
+  </div>
+
+  <script>
+    function login(e) {
+      e.preventDefault();
+      alert('Iniciar sesión (esto es solo diseño HTML 😉)');
+    }
+  </script>
+</body>
+</html>
